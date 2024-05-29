@@ -1,13 +1,70 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
+  <div class="header-inner">
+    <svg class="logo" width="127" height="20">
+      <use href="./img/icons.svg#logo"></use>
+    </svg>
+    <ul class="dsk-header-list">
+      <li><a class="dsk-header-link" href="#about-us">about us</a></li>
+      <li><a class="dsk-header-link" href="#our-courses">our courses</a></li>
+      <li><a class="dsk-header-link" href="#our-mentors">our mentors</a></li>
+      <li><a class="dsk-header-link" href="#reviews">reviews</a></li>
+      <li><a class="dsk-header-link" href="#contacts">contacts</a></li>
     </ul>
-  </nav>
+
+    <div class="icon-header-mobile">
+      <a class="camera" href="#sign-up">
+        <svg width="16" height="16">
+          <use href="./img/icons.svg#mobile-camera"></use>
+        </svg>
+      </a>
+
+      <button class="header-btn-menu" type="button" data-menu-open>
+        <svg width="32" height="22">
+          <use href="./img/icons.svg#mobile-nav"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <a class="btn-link-anc" href="#sign-up">Sign&nbsp;up </a>
 </header>
+
+<div class="backdrop is-hidden" data-menu>
+  <div class="header-nav-menu">
+    <button class="nav-menu-close" type="button" data-menu-close>
+      <svg width="32" height="32">
+        <use href="./img/icons.svg#mobile-menu-close"></use>
+      </svg>
+    </button>
+    <ul class="menu-list">
+      <li class="menu-link-first">
+        <a class="link" href="#about-us">About us</a>
+      </li>
+      <li class="menu-link">
+        <a class="link" href="#our-courses">Our courses</a>
+      </li>
+      <li class="menu-link">
+        <a class="link" href="#our-mentors">Our mentors</a>
+      </li>
+      <li class="menu-link"><a class="link" href="#reviews">Reviews</a></li>
+      <li class="menu-link"><a class="link" href="#contacts">contacts</a></li>
+    </ul>
+    <div class="container-img-camera">
+      <picture>
+        <source
+          srcset="
+            ./img/header/camera-nav-menu-tablet.jpg    1x,
+            ./img/header/camera-nav-menu-tablet@2x.jpg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./img/header/camera-nav-menu.jpg    1x,
+            ./img/header/camera-nav-menu@2x.jpg 2x
+          "
+        />
+        <img src="./img/header/camera-nav-menu.jpg" alt="camera" />
+      </picture>
+    </div>
+  </div>
+</div>
